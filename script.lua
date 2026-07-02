@@ -99,7 +99,7 @@ local KeySubTitle = Instance.new("TextLabel", KeyFrame)
 KeySubTitle.Size = UDim2.new(1, 0, 0, 20)
 KeySubTitle.Position = UDim2.new(0, 0, 0, 55)
 KeySubTitle.BackgroundTransparency = 1
-KeySubTitle.Text = "Veuillez entrer votre clé d'accès"
+KeySubTitle.Text = "Please Enter your key"
 KeySubTitle.TextColor3 = Color3.fromRGB(140, 140, 150)
 KeySubTitle.Font = Enum.Font.GothamMedium
 KeySubTitle.TextSize = 13
@@ -111,7 +111,7 @@ KeyInput.Position = UDim2.new(0.5, -140, 0, 100)
 KeyInput.BackgroundColor3 = Color3.fromRGB(30, 30, 35)
 KeyInput.BorderSizePixel = 0
 KeyInput.Text = ""
-KeyInput.PlaceholderText = "Entrez la clé ici..."
+KeyInput.PlaceholderText = "Enter your Key here..."
 KeyInput.TextColor3 = Color3.fromRGB(255, 255, 255)
 KeyInput.Font = Enum.Font.Gotham
 KeyInput.TextSize = 14
@@ -124,7 +124,7 @@ SubmitBtn.Size = UDim2.new(0, 280, 0, 42)
 SubmitBtn.Position = UDim2.new(0.5, -140, 0, 160)
 SubmitBtn.BackgroundColor3 = Color3.fromRGB(255, 50, 50)
 SubmitBtn.BorderSizePixel = 0
-SubmitBtn.Text = "Vérifier la clé"
+SubmitBtn.Text = "Verify Key"
 SubmitBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
 SubmitBtn.Font = Enum.Font.GothamBold
 SubmitBtn.TextSize = 14
@@ -482,7 +482,7 @@ end
 spawnKeyUI()
 
 SubmitBtn.MouseButton1Click:Connect(function()
-    if KeyInput.Text == "admin" then
+    if KeyInput.Text == "admin67sahur" then
         TweenService:Create(KeyFrame, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
             Size = UDim2.new(0, 0, 0, 0), BackgroundTransparency = 1
         }):Play()
