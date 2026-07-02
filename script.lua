@@ -387,7 +387,7 @@ end
 -- ==========================================
 
 -- Page BigFoot (Reach)
-createToggle(BigFootPage, "Activer BigFoot (Reach)", getgenv().bigfoot.MasterToggle, function(state)
+createToggle(BigFootPage, "Toggle BigFoot (Reach)", getgenv().bigfoot.MasterToggle, function(state)
     getgenv().bigfoot.MasterToggle = state
     if not state and getgenv()._reachPart then
         getgenv()._reachPart.Size = Vector3.new(0, 0, 0)
@@ -409,7 +409,7 @@ end)
 BigFootPage.CanvasSize = UDim2.new(0, 0, 0, 2 * 55 + 50)
 
 -- Page AutoGuard
-local updateToggleVisual = createToggle(AutoGuardPage, "Activer AutoGuard", getgenv().guarding, function(state)
+local updateToggleVisual = createToggle(AutoGuardPage, "Toggle AutoGuard", getgenv().guarding, function(state)
     getgenv().guarding = state
     if not state then
         getgenv()._ball = nil
@@ -417,7 +417,7 @@ local updateToggleVisual = createToggle(AutoGuardPage, "Activer AutoGuard", getg
     end
 end)
 
-createKeybind(AutoGuardPage, "Touche d'activation", getgenv().settings.toggleKey, function(newKey)
+createKeybind(AutoGuardPage, "Keybind", getgenv().settings.toggleKey, function(newKey)
     getgenv().settings.toggleKey = newKey
 end)
 
