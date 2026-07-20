@@ -653,7 +653,7 @@ end))
 -- ==========================================
 
 local grav = workspace.Gravity or 196.2
-local ballNames = { ["VEF"]=true, ["TPS"]=true, ["ROFI"]=true, ["PRS"]=true, ["MPS"]=true, ["LPFI"]=true, ["Ball"]=true, ["CBM"]=true, ["Football"]=true, ["VRF"]=true }
+local ballNames = { ["VEF"]=true, ["TPS"]=true, ["ROFI"]=true, ["PRS"]=true, ["MPS"]=true, ["LPFI"]=true, ["Ball"]=true, ["CBM"]=true, ["CMP"]=true, ["VRF"]=true }
 
 getgenv()._ball = nil
 getgenv()._smoothAcc = Vector3.zero
